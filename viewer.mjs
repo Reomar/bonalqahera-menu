@@ -16,7 +16,7 @@ try {
     canvas.width = Math.floor(viewport.width * pixelRatio);
     canvas.height = Math.floor(viewport.height * pixelRatio);
     canvas.setAttribute('role', 'img');
-    canvas.setAttribute('aria-label', `Menu, page ${number} of ${pdf.numPages}`);
+    canvas.setAttribute('aria-label', `القائمة، الصفحة ${number} من ${pdf.numPages}`);
     menu.append(canvas);
     await page.render({
       canvasContext: canvas.getContext('2d'),
