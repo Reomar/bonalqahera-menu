@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f3dfc5">
+  <title>Bon Alqahera menu</title>
+  <style>
+    html, body { margin: 0; min-height: 100%; background: #f3dfc5; }
+    main { width: min(100%, 1000px); margin: 0 auto; }
+    canvas { display: block; width: 100%; height: auto; }
+    .fallback { padding: 1rem; font: 16px sans-serif; }
+    .fallback a { color: #641d2b; }
+    .screen-reader-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
+    .screen-reader-only:focus { position: static; width: auto; height: auto; margin: 0; clip: auto; }
+  </style>
+  <script type="module" src="viewer.mjs"></script>
+</head>
+<body>
+  <main id="menu" aria-label="Bon Alqahera menu"></main>
+  <a class="screen-reader-only" href="menu.pdf">Open the menu PDF</a>
+  <p class="fallback" id="fallback" hidden>Could not display the menu. <a href="menu.pdf">Open the PDF</a>.</p>
+  <noscript><p class="fallback"><a href="menu.pdf">Open the menu PDF</a></p></noscript>
+</body>
+</html>
