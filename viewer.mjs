@@ -4,7 +4,7 @@ const fallback = document.getElementById('fallback');
 try {
   const pdfjs = await import('./vendor/pdf.min.mjs');
   pdfjs.GlobalWorkerOptions.workerSrc = new URL('./vendor/pdf.worker.min.mjs', import.meta.url).href;
-  const pdf = await pdfjs.getDocument({ url: 'menu.pdf' }).promise;
+  const pdf = await pdfjs.getDocument({ url: 'menu.pdf?v=c5609a0c9145' }).promise;
 
   for (let number = 1; number <= pdf.numPages; number += 1) {
     const page = await pdf.getPage(number);

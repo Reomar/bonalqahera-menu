@@ -8,7 +8,7 @@ Run `python3 -m http.server 8000` from this directory and open `http://localhost
 
 ## Update the menu
 
-Replace `menu.pdf` with the new menu, preview it, and commit the change. Keep the filename `menu.pdf`; the viewer renders each page automatically. The original PDF is also available at `/menu.pdf`.
+Replace `menu.pdf` with the new menu. To avoid serving a cached older menu, replace the version in `viewer.mjs`, the viewer script URL, and the PDF links in `index.html` with the first 12 characters of `shasum -a 256 menu.pdf`. Preview the menu and commit the change. Keep the filename `menu.pdf`; the viewer renders each page automatically. The PDF is also available at `/menu.pdf`.
 
 ## GitHub Pages and domain
 
